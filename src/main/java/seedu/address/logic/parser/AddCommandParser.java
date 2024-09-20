@@ -47,7 +47,7 @@ public class AddCommandParser implements Parser<AddCommand> {
         Set<Tag> tagList = ParserUtil.parseTags(argMultimap.getAllValues(PREFIX_TAG));
         Remark remark = new Remark(""); // remarks is empty by default for a new person
 
-        Person person = new Person(name, phone, email, address, tagList, remark);
+        Person person = new Person(name, phone, email, address, remark, tagList);
 
         return new AddCommand(person);
     }

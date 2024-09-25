@@ -12,6 +12,9 @@ import seedu.address.model.person.Remark;
 
 //@@author {tayxuenye}-reused
 //From Week 6 tp CS2103T tutorial 2 sample code from j-lum
+/**
+ * Parses input arguments and creates a new {@code RemarkCommand} object
+ */
 public class RemarkCommandParser implements Parser<RemarkCommand> {
     /**
      * Parses the given {@code String} of arguments in the context of the {@code RemarkCommand}

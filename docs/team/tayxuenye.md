@@ -19,6 +19,7 @@ Given below are my contributions to the project.
 * **Code contributed**: [RepoSense link]()
 
 * **Project management**:
+  * Updated README page to match project. Added UI mockup, updated link of GitHub Actions build status badge, acknowledged original source of code, and updated remaining content. 
 
 * **Enhancements to existing features**:
 

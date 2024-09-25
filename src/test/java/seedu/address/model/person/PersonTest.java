@@ -92,12 +92,13 @@ public class PersonTest {
 
     @Test
     public void toStringMethod() {
-        String expected = "Person{name=" + ALICE.getName()
-                + ", phone=" + ALICE.getPhone()
-                + ", email=" + ALICE.getEmail()
-                + ", address=" + ALICE.getAddress()
-                + ", remark=" + ALICE.getRemark() // Added remark since it's in the actual toString()
-                + ", tags=" + ALICE.getTags() + "}";
+        String expected = "Alice Pauline"
+                + " Phone: 94351253"
+                + " Email: alice@example.com"
+                + " Address: 123, Jurong West Ave 6, #08-111"
+                + " Remark: "
+                + " Tags: [friends]";
         assertEquals(expected, ALICE.toString());
     }
+
 }

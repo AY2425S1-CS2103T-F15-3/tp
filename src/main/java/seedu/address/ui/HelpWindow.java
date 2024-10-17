@@ -25,7 +25,7 @@ public class HelpWindow extends UiPart<Stage> {
     private static final String HELP_INTRO = "Below are some basic instructions to get started using PROperty!";
 
     private static final String HELP_MORE_INFORMATION = "For more detailed information, "
-            + "- visit the PROperty User Guide at: https://ay2425s1-cs2103t-f15-3.github.io/tp/UserGuide.html";
+            + " visit the PROperty User Guide at: https://ay2425s1-cs2103t-f15-3.github.io/tp/UserGuide.html";
 
 
     private static final String HELP_MESSAGE = HELP_INTRO

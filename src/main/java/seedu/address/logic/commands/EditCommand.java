@@ -60,7 +60,7 @@ public class EditCommand extends Command {
             + "- Format: edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG] [r/REMARK]\n"
             + "- Example: edit 1 p/87654321"
             + "- INDEX is the index of the customer displayed. Items in the [square brackets] are optional "
-            + "- and can be input in any order!";
+            + "and can be input in any order!";
     private final Index index;
     private final EditPersonDescriptor editPersonDescriptor;
 

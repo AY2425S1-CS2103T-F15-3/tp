@@ -56,7 +56,11 @@ public class EditCommand extends Command {
     public static final String MESSAGE_EDIT_PERSON_SUCCESS = "Edited Person: %1$s";
     public static final String MESSAGE_NOT_EDITED = "At least one field to edit must be provided.";
     public static final String MESSAGE_DUPLICATE_PERSON = "This person already exists in the address book.";
-
+    public static final String HELP_EDIT_COMMAND = "Edit Command \n"
+            + "- Format: edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG] [r/REMARK]\n"
+            + "- Example: edit 1 p/87654321"
+            + "- INDEX is the index of the customer displayed. Items in the [square brackets] are optional "
+            + "- and can be input in any order!";
     private final Index index;
     private final EditPersonDescriptor editPersonDescriptor;
 

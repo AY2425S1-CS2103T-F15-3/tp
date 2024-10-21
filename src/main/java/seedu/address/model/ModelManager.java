@@ -33,6 +33,7 @@ public class ModelManager implements Model {
 
         this.addressBook = new AddressBook(addressBook);
         this.userPrefs = new UserPrefs(userPrefs);
+        System.out.println(this.addressBook.getPersonList().get(0));
         filteredPersons = new FilteredList<>(this.addressBook.getPersonList());
     }
 
@@ -107,7 +108,6 @@ public class ModelManager implements Model {
     @Override
     public void setPerson(Person target, Person editedPerson) {
         requireAllNonNull(target, editedPerson);
-
         addressBook.setPerson(target, editedPerson);
     }
 

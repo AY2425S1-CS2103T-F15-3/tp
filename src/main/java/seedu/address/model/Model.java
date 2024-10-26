@@ -1,6 +1,7 @@
 package seedu.address.model;
 
 import java.nio.file.Path;
+import java.util.Comparator;
 import java.util.function.Predicate;
 
 import javafx.collections.ObservableList;
@@ -13,6 +14,9 @@ import seedu.address.model.person.Person;
 public interface Model {
     /** {@code Predicate} that always evaluate to true */
     Predicate<Person> PREDICATE_SHOW_ALL_PERSONS = unused -> true;
+
+    /** {@code Comparator} that compares the full names of Persons */
+    Comparator<Person> COMPARATOR_SORT_NAMES = Comparator.comparing(person -> person.getName().fullName.toLowerCase());
 
     /**
      * Replaces user prefs data with the data in {@code userPrefs}.
@@ -88,5 +92,5 @@ public interface Model {
     /**
      * Sorts the person list by name in alphabetical order.
      */
-    void sortPersonList();
+    void sortPersonList(Comparator<Person> comparator);
 }

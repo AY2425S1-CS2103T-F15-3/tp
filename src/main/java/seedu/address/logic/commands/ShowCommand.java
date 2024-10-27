@@ -12,7 +12,7 @@ import seedu.address.model.person.Person;
  * Shows detailed information about a person in the address book.
  */
 public class ShowCommand extends Command {
-//This is a test
+    
     public static final String COMMAND_WORD = "show";
     public static final String MESSAGE_SHOW_PERSON_SUCCESS = "Displaying details for %s.";
 

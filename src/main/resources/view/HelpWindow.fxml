@@ -20,13 +20,11 @@
       </stylesheets>
       <ScrollPane fitToHeight="true" fitToWidth="true">
         <VBox fx:id="helpMessageContainer" alignment="TOP_LEFT">
-          <children>
-            <Text fx:id="helpMessage" wrappingWidth="600" fill="WHITE">
-              <VBox.margin>
-                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-              </VBox.margin>
-            </Text>
-          </children>
+          <Text fx:id="helpMessage" wrappingWidth="600" fill="WHITE">
+            <VBox.margin>
+              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+          </Text>
         </VBox>
       </ScrollPane>
     </Scene>

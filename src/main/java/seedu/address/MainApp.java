@@ -13,6 +13,7 @@ import seedu.address.commons.core.Version;
 import seedu.address.commons.exceptions.DataLoadingException;
 import seedu.address.commons.util.ConfigUtil;
 import seedu.address.commons.util.StringUtil;
+import seedu.address.commons.util.UrlUtil;
 import seedu.address.logic.Logic;
 import seedu.address.logic.LogicManager;
 import seedu.address.model.AddressBook;
@@ -50,6 +51,8 @@ public class MainApp extends Application {
     public void init() throws Exception {
         logger.info("=============================[ Initializing PROperty ]===========================");
         super.init();
+
+        UrlUtil.setHostServices(getHostServices());
 
         AppParameters appParameters = AppParameters.parse(getParameters());
         config = initConfig(appParameters.getConfigPath());

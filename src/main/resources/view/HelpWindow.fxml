@@ -4,6 +4,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Scene?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.image.Image?>
 <?import javafx.stage.Stage?>
 
@@ -22,9 +23,14 @@
         <VBox fx:id="helpMessageContainer" alignment="TOP_LEFT">
           <Text fx:id="helpMessage" wrappingWidth="600" fill="WHITE">
             <VBox.margin>
-              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+              <Insets left="10.0" right="10.0" top="10.0"/>
             </VBox.margin>
           </Text>
+          <Hyperlink fx:id="ugLink">
+            <VBox.margin>
+              <Insets bottom="10.0" left="5.0" right="10.0"/>
+            </VBox.margin>
+          </Hyperlink>
         </VBox>
       </ScrollPane>
     </Scene>

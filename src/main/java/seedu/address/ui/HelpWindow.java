@@ -17,10 +17,12 @@ import static seedu.address.logic.commands.SortCommand.HELP_SORT_COMMAND;
 import java.util.logging.Logger;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import seedu.address.commons.core.LogsCenter;
+import seedu.address.commons.util.UrlUtil;
 
 /**
  * Controller for a help page
@@ -30,8 +32,9 @@ public class HelpWindow extends UiPart<Stage> {
     private static final String HELP_INTRO = "Below are some basic instructions to get started using PROperty!";
 
     private static final String HELP_MORE_INFORMATION = "For more detailed information,"
-            + " visit the PROperty User Guide at: https://ay2425s1-cs2103t-f15-3.github.io/tp/UserGuide.html";
+            + " visit the PROperty User Guide at: ";
 
+    private static final String HELP_USER_GUIDE_URL = "https://ay2425s1-cs2103t-f15-3.github.io/tp/UserGuide.html";
 
     private static final String HELP_MESSAGE = HELP_INTRO
             + "\n\n"
@@ -77,6 +80,9 @@ public class HelpWindow extends UiPart<Stage> {
     @FXML
     private ScrollPane scrollPane;
 
+    @FXML
+    private Hyperlink ugLink;
+
     /**
      * Creates a new HelpWindow.
      *
@@ -85,6 +91,8 @@ public class HelpWindow extends UiPart<Stage> {
     public HelpWindow(Stage root) {
         super(FXML, root);
         helpMessage.setText(HELP_MESSAGE);
+        ugLink.setText(HELP_USER_GUIDE_URL);
+        ugLink.setOnAction(event -> UrlUtil.openUrl(HELP_USER_GUIDE_URL));
         setWindowDefaultSize(root);
     }
 

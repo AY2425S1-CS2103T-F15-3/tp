@@ -682,20 +682,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ---
 
-**Use case: Sort contacts in alphabetical order**
-
-**MSS**
-
-1. User requests to sort contacts.
-
-2. PROperty sorts the contact list in alphabetical order.
-
-3. PROperty displays the sorted list.
-   
-   Use case ends.
-
----
-
 **Use case: View a guide on application features**
 
 **MSS**

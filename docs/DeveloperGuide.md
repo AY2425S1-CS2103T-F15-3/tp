@@ -656,32 +656,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ---
 
-**Use case: View error messages with exact causes**
-
-**MSS**
-
-1. User executes a command.
-
-2. PROperty detects an error in the command.
-
-3. PROperty displays an error message clearly indicating the cause.
-
-4. User reviews the error message and corrects the command.
-   
-   Use case ends.
-
-**Extensions**
-
-- 3a. Error message is too generic.
-  
-  - 3a1. User requests more details.
-  
-  - 3a2. PROperty provides additional information about the error.
-    
-    Use case resumes at step 4.
-
----
-
 **Use case: View a guide on application features**
 
 **MSS**
